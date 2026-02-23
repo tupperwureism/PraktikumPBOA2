@@ -78,9 +78,7 @@ public class Garis {
 
     void persamaanGaris(){
         double c = (this.awal.getOrdinat() - (this.getGradien() * this.awal.getAbsis()));
-        int a = (int) c;
-        int z = (int) this.getGradien();
-        System.out.println("y = " + z + "x + " + a);
+        System.out.println("y = " + this.getGradien() + "x + " + c);
     }
 
 
