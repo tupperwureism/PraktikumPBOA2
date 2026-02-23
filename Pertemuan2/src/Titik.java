@@ -39,13 +39,13 @@ public class Titik {
     }
 
     //mengeset titik absis dengan nilai baru x
-    double setAbsis(double x){
-        return absis = x;
+    void setAbsis(double x){
+        absis = x;
     }
 
     //mengembalikan titik ordinat dengan nila baru y
-    double setOrdinat(double y){
-        return ordinat = y;
+    void setOrdinat(double y){
+        ordinat = y;
     }
 
     //mengeser nilai absis dan ordinat titik masing-masing sejauh x dan y
@@ -69,16 +69,15 @@ public class Titik {
         }
     }
 
-    int getJarakPusat(){
+    double getJarakPusat(){
         double jarak = Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
         // System.out.println("Jarak titik (" + absis + "," + ordinat + ") ke pusat (0,0) adalah " + jarak);
-        return (int) jarak;
+        return jarak;
     }
 
-    int Jarak(Titik T){
+    double getJarak(Titik T){
         double jarak = Math.sqrt(Math.pow((absis - T.absis), 2) + Math.pow((ordinat - T.ordinat), 2));
-        // System.out.println("Jarak antara titik (" + absis + "," + ordinat + ") dan titik (" + T.absis + "," + T.ordinat + ") adalah " + jarak);
-        return (int) jarak;
+        return jarak;
     }
 
     void refleksiX(){
