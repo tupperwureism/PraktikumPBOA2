@@ -1,7 +1,7 @@
 /*Nama File : Titik.java */
 /*Deskkripsi : membuat atribut dan method dalam class titik */
 /*Pembuat : Shalom Kurniawan */
-/*Tanggal : 20 Februari 2026 
+/*Tanggal : 23 Februari 2026 
 */
 
 public class Mtitik {
