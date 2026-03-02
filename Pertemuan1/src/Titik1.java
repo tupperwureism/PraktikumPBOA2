@@ -4,14 +4,14 @@
 /*Tanggal : 20 Februari 2026 
 */
 
-public class Titik {
+public class Titik1 {
     /*ATRIBUT */
     double ordinat;
     double absis;
 
     /*METHOD */
     /*konstruktor titik (0,0) */
-    Titik(){
+    Titik1(){
         absis = 0;
         ordinat = 0;
     }
