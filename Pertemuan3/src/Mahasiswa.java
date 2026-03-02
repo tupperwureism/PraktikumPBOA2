@@ -25,6 +25,30 @@ public class Mahasiswa {
         this.listMatkul = new ArrayList<>();
     }
 
+    public void setDosenWali(Dosen D1){
+        this.DosenWali = D1;
+    }
+
+    public void setNama(String nama){
+        this.nama = nama;
+    }
+
+    public void setNIM(String nim){
+        this.nim = nim;
+    }
+
+    public void setProdi(String prodi){
+        this.prodi = prodi;
+    }
+
+    public void setKendaraan(Kendaraan K){
+        this.kendaraan = K;
+    }
+
+    public void setListMatkul(ArrayList<MataKuliah> list){
+        this.listMatkul = list;
+    }
+
     public String getnama(){
         return this.nama;
     }
@@ -57,6 +81,9 @@ public class Mahasiswa {
         this.nama = nama;
         this.prodi = prodi;
         this.nim = nim;
+        this.DosenWali = new Dosen();
+        this.kendaraan = new Kendaraan();
+        this.listMatkul = new ArrayList<>();
     }
 
     public void printDetailMhs(){

@@ -17,7 +17,7 @@ public class MataKuliah {
         nama = "";
     }
 
-    public MataKuliah(String idMatkul, int SKS, String nama){
+    public MataKuliah(String idMatkul, String nama, int SKS){
         this.idMatkul = idMatkul;
         this.SKS = SKS;
         this.nama = nama;
