@@ -57,3 +57,4 @@ public class BangunDatar {
         System.out.println("Jumlah bangun datar yang ada: " + counterBangunDatar);
     }
 }
+                
