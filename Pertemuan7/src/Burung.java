@@ -8,13 +8,13 @@ public class Burung extends Anabul{
         super.setNama(nama);
     }
     public void Gerak(){
-        System.out.println("Anjing berjalan dan berlari dengan 4 kaki");
+        System.out.println("Burung terbang dengan dua sayap");
     }
     public void Bersuara(){
-        System.out.println("Guk-guk");
+        System.out.println("Cicuit");
     }
     public void printInfoAnabul(){
-        System.out.println("Hewan: Anjing");
+        System.out.println("Hewan: Burung");
         super.printInfoAnabul();
     }
 }

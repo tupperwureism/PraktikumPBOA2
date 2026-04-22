@@ -1,23 +1,21 @@
-package NOMOR1DAN2;
-
 //a.
-public class Mahasiswa {
+public class Mahasiswaa {
     //atribut
     private String NIM;
     private String nama;
     private String ProgramStudi;
     //method
-    public Mahasiswa(){
+    public Mahasiswaa(){
         NIM = "-999";
         nama = "n/a";
         ProgramStudi = "n/a";
     }
-    public Mahasiswa(String NIM, String nama, String ProgramStudi){
+    public Mahasiswaa(String NIM, String nama, String ProgramStudi){
         this.NIM = NIM;
         this.nama = nama;
         this.ProgramStudi = ProgramStudi;
     }
-    public Mahasiswa(Mahasiswa m){
+    public Mahasiswaa(Mahasiswaa m){
         this.NIM = m.getNIM();
         this.nama = m.getNama();
         this.ProgramStudi = m.getProgramStudi();
@@ -43,7 +41,7 @@ public class Mahasiswa {
     public void setProgramStudi(String ProgramStudi){
         this.ProgramStudi = ProgramStudi;
     }
-    public void setProgramStudi(Mahasiswa mhs1){
+    public void setProgramStudi(Mahasiswaa mhs1){
         this.ProgramStudi = mhs1.getProgramStudi();
     }
     public void printInfoMhs(){

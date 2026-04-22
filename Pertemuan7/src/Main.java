@@ -2,6 +2,65 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        /*1*/
+        //a.
+        int k = 65;
+        char c = (char) k;
+        double d = (double) k;
+        String z = Integer.toString(k);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(z);
+        //b.
+        int t = (int) d;
+        System.out.println(t);
+        //c.
+        String X = "1234"; String Y = "5678";
+        String S = X + Y;
+        int Z = Integer.parseInt(X) + Integer.parseInt(Y);
+        System.out.println(S);
+        System.out.println(Z);
+        //d.
+        String P = "12.34"; String Q = "56.78";
+        String R = P + Q;
+        double D = Double.parseDouble(P) + Double.parseDouble(Q);
+        System.out.println(R);
+        System.out.println(D);
+        //e.
+        int A = Integer.parseInt(S);
+        System.out.println(A);
+        //f.
+        String T = Integer.toString(A);
+        System.out.println(T);
+        /*2*/
+        //c.
+        Mahasiswaa m1 = new Mahasiswaa("13243577","Zubadijul","Analisis dan Strategi Algae");
+        //b.
+        m1.printInfoMhs();
+        m1.setNIM("67");
+        m1.setNama("Dinobenjut");
+        m1.setProgramStudi("Manajemen Basis Datang");
+        m1.printInfoMhs();
+        //d.
+        Mahasiswaa m2 = new Mahasiswaa();
+        m2.printInfoMhs();
+        //e.
+        Mahasiswaa m3 = new Mahasiswaa(m1);
+        m3.printInfoMhs();
+        System.out.println("/*--------------------------------------------------------------------------------------------------- */");
+/*--------------------------------------------------------------------------------------------------- */
+        //3.
+        Anabul A1 = new Kucing("Yudi");
+        Kucing K1 = (Kucing) A1;
+        Anabul A2 = new Anjing("Alan");
+        Anjing An1 = (Anjing) A2;
+        Burung B1 = new Burung("Yanto");
+        K1.printInfoAnabul();
+        An1.printInfoAnabul();
+        B1.printInfoAnabul();
+/*--------------------------------------------------------------------------------------------------- */
+        System.out.println("/*--------------------------------------------------------------------------------------------------- */");
+        //4.
         CivitasAkademika C2 = new Dosen("Suparji", "675747");
         Dosen D1 = (Dosen) C2;
         Dosen D2 = new Dosen("Ambazing", "099");
