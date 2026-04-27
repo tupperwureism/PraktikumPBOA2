@@ -112,19 +112,37 @@ System.out.println("------------------------------------------------------------
         //tukar integer
         Integer a = 1;
         Integer b = 2;
-        op.tukar(a, b);
+        Datum<Integer> datumA = new Datum<>();
+        Datum<Integer> datumB = new Datum<>();
+        datumA.setIsi(a);
+        datumB.setIsi(b);
+        op.tukar(datumA, datumB);
+        // a = datumA.getIsi();
+        // b = datumB.getIsi();
+        // System.out.println("a = " + a + " , b = " + b);
 
         //tukar string
         String ng1 = "Abi"; String ng2 = "Iba";
-        op.tukar(ng1, ng2);
+        Datum<String> datumng1 = new Datum<>(); datumng1.setIsi(ng1);
+        Datum<String> datumng2 = new Datum<>(); datumng2.setIsi(ng2);
+        op.tukar(datumng1, datumng2);
+        // System.out.println("ng1 = " + datumng1.getIsi() + " , ng2 = " + datumng2.getIsi());
 
         Anabul krose = new Anjing("Juti");
-        Anabul krise = new Kucing("Likumahuwi", 18);
-        Anabul kruse = new Kucing("Panduwidodo", 12);
-        op.tukar(krose, krise);
+        Anabul krise = new Anggora("Likumahuwi", 18);
+        Anabul kruse = new Anggora("Panduwidodo", 12);
+        Datum<Anabul> datumKruse = new Datum<>();
+        Datum<Anabul> datumKrose = new Datum<>();
+        datumKruse.setIsi(kruse);
+        datumKrose.setIsi(krose);
+        op.tukar(datumKruse, datumKrose);
+        kruse = datumKruse.getIsi();
+        krose = datumKrose.getIsi();
+        System.out.println("nama objek kruse saat ini: " + kruse.getNama());
+        System.out.println("nama objek krose saat ini: " + krose.getNama());
 
-        System.out.println("Bobot dari kucing " + krise.getNama() + " dan kucing " + kruse.getNama() + " adalah: "
-        + op.Bobot2((Kucing)kruse, (Kucing)krise));
+        System.out.println("Bobot dari kucing " + krise.getNama() + " dan kucing " + krose.getNama() + " adalah: "
+        + op.Bobot2((Kucing)krise, (Kucing)krose));
 
 System.out.println("-------------------------------------------------------------------------");
         Data<Anabul> DataAnabul = new Data<>();
