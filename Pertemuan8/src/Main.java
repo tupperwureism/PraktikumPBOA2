@@ -96,12 +96,14 @@ public class Main {
         datumAnabul.setIsi(oyen);
 
         Anabul isiSaatIni = datumAnabul.getIsi();
+        System.out.println("Suara dari objek anabul " + isiSaatIni.getNama() + " : ");
         isiSaatIni.Bersuara();
 
         Anjing pingping = new Anjing("PingPing");
         datumAnabul.setIsi(pingping);
 
         isiSaatIni = datumAnabul.getIsi();
+        System.out.println("Suara dari objek anabul " + isiSaatIni.getNama() + " : ");
         isiSaatIni.Bersuara();
 
 System.out.println("-------------------------------------------------------------------------");
